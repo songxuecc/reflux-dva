@@ -1,27 +1,33 @@
 {
-  "name": "reflux-dva",
-  "version": "1.0.1",
-  "description": "write reflux like dva",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/songxuecc/reflux-dva.git"
-  },
-  "keywords": [
-    "reflux",
-    "flux",
-    "dva"
-  ],
-  "author": "songxuecc",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/songxuecc/reflux-dva/issues"
-  },
-  "homepage": "https://github.com/songxuecc/reflux-dva#readme",
-  "dependencies": {
-    "reflux": "^6.4.1"
-  }
+    "name": "reflux-dva",
+    "version": "1.0.2",
+    "description": "write reflux like dva",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "pansy",
+        "pub": "npm publish --registry https://registry.npmjs.org/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/songxuecc/reflux-dva.git"
+    },
+    "keywords": [
+        "reflux",
+        "flux",
+        "dva"
+    ],
+    "author": "songxuecc",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/songxuecc/reflux-dva/issues"
+    },
+    "homepage": "https://github.com/songxuecc/reflux-dva#readme",
+    "dependencies": {
+        "react": "^16.12.0",
+        "reflux": "^6.4.1"
+    },
+    "devDependencies": {
+        "@walrus/pansy": "^0.3.0"
+    }
 }
