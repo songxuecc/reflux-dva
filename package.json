@@ -1,12 +1,12 @@
 {
     "name": "reflux-dva",
-    "version": "1.0.4",
+    "version": "1.0.7",
     "description": "write reflux like dva",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": " rm -rf ./lib &&  NODE_ENV=production pansy",
-        "start": " rm -rf ./lib &&  pansy",
+        "start": " rm -rf ./example/src/utils/reflux-dva &&  pansy",
         "pub": "npm publish --registry https://registry.npmjs.org/"
     },
     "repository": {
@@ -27,5 +27,5 @@
     "devDependencies": {
         "@walrus/pansy": "^0.3.0"
     },
-    "files": [ "dist", "index.js" ]
+    "files": [ "lib", "index.js" ]
 }

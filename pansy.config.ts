@@ -3,7 +3,7 @@ const isProduction = process.env.NODE_ENV === "production";
 const config: Config = {
     input: "src/index.js",
     output: {
-        dir: "./lib",
+        dir: isProduction ?"./lib":'./example/src/utils/reflux-dva',
         format: isProduction ? "cjs-min" : "cjs",
     },
 };
