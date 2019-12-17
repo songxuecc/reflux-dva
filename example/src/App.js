@@ -4,8 +4,8 @@ import Address from "./pages/address";
 import AddressDva from "./pages/address-dva";
 import HomeDva from "./pages/home-dva";
 import { Store } from "./store";
-import Reflux from "reflux"
-
+import Reflux from "reflux";
+import { Provider } from "./utils/reflux-redux-dva";
 
 import refluxConnect from "./utils/reflux-connect";
 
@@ -14,15 +14,16 @@ import "./App.css";
 class App extends Reflux.Component {
     constructor() {
         super();
-        this.stores = [ Store ] 
+        this.stores = [ Store ];
     }
 
-    componentDidMount() {
-    }
+    componentDidMount() {}
     render() {
         return (
             <div>
-                <Home />
+                <Provider store={{ a: "test-Provider-connect" }}>
+                    <Home parentProps={'parentProps'}/>
+                </Provider>
                 <br />
                 {/* <Address /> */}
                 <br />
@@ -36,4 +37,4 @@ class App extends Reflux.Component {
     }
 }
 
-export default App
+export default App;
