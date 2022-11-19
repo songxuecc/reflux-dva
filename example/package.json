@@ -9,7 +9,7 @@
     "mockjs": "^1.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0",
+    "react-scripts": "5.0.1",
     "reflux": "^6.4.1",
     "reflux-connect": "^0.2.0"
   },
